@@ -1,0 +1,9 @@
+D
+
+Consideremos a sequência das diferenças. 
+Vamos dar sort a essa sequência. Temos de manter N-K valores, e desses temos de encontrar o X que minimiza a soma dos valores absolutos das diferenças. 
+É conhecido que o melhor X é a mediana.
+Os valores a manter devem ser continuos na sequência dos valores sorted(uma vez que a resposta mede a dispersão, é sempre melhor tê-lo mais proximos).
+Para calcular a resposta temos de fazer então uma sliding window.
+O caso K=N é separado com resposta sempre 0.
+Complexidade O(NlogN)
